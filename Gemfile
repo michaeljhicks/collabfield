@@ -42,6 +42,13 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', require: false
+gem 'rspec-rails'
+gem 'factory_bot'
+gem 'rails-controller-testing'
+gem 'headless' # required to support headless drivers
+gem 'capybara'
+gem 'poltergeist' # the headless driver
+gem 'database_cleaner' # required to clean the test database after tests where JS was executed
 
 # Use Sass to process CSS
 # gem "sassc-rails"
