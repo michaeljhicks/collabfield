@@ -62,6 +62,8 @@ group :development, :test do
   gem 'capybara'
   gem 'poltergeist' # the headless driver
   gem 'database_cleaner' # required to clean the test database after tests where JS was executed
+  gem 'launchy'
+  gem 'simplecov'
 end
 
 group :development do
