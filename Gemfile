@@ -42,14 +42,6 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', require: false
-gem 'rspec-rails'
-gem 'factory_bot'
-gem 'rails-controller-testing'
-gem 'headless' # required to support headless drivers
-gem 'capybara'
-gem 'poltergeist' # the headless driver
-gem 'database_cleaner' # required to clean the test database after tests where JS was executed
-
 # Use Sass to process CSS
 # gem "sassc-rails"
 gem 'bootstrap-sass', '~> 3.3.6'
@@ -63,6 +55,13 @@ gem 'bootstrap_form'
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[mri mingw x64_mingw]
+  gem 'rspec-rails'
+  gem 'factory_bot_rails'
+  gem 'rails-controller-testing'
+  gem 'headless' # required to support headless drivers
+  gem 'capybara'
+  gem 'poltergeist' # the headless driver
+  gem 'database_cleaner' # required to clean the test database after tests where JS was executed
 end
 
 group :development do
@@ -78,7 +77,6 @@ end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem 'capybara'
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
